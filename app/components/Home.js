@@ -17,7 +17,7 @@ export default function Home({ adminId, posterId }) {
     <>
       <nav className="flex  ml-10 mt-10">
         <img src="/images/facetime-logo.png" height={50} width={50} />
-        <p className="text-2xl font-bold text-center ml-2 text-[#226e93]">
+        <p className="text-2xl font-bold text-center ml-2 mt-2 text-[#226e93]">
           Facetime
         </p>
       </nav>
