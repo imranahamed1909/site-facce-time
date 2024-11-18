@@ -15,8 +15,9 @@ export default function Home({ adminId, posterId }) {
   const [showWebCam, setShowWebCam] = useState(false);
   return (
     <>
-      <nav className="flex justify-between ml-10 mt-10">
-        <img src="/images/facetime-logo.png" height={40} width={200} />
+      <nav className="flex  ml-10 mt-10">
+        <img src="/images/facetime-logo.png" height={50} width={50} />
+        <p className="text-2xl font-bold text-[#226e93]">Facetime</p>
       </nav>
       {!showForm ? (
         <div className="flex flex-col justify-center items-center mt-10">
